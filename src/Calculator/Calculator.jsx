@@ -23,7 +23,6 @@ const Calculator = () => {
 
     const handleCalculate = () => {
         const normalizedExpression = normalizeExpression(expression)
-        console.log(`normalizedExpression`, normalizedExpression)
         const rpn = convertToRPN(normalizedExpression)
         setResult(calculateResult(rpn));
       };
