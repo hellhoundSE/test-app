@@ -54,8 +54,8 @@ export const convertToRPN = (expression) => {
 };
 
 export const calculateResult = (normalizedExpression) => {
-  let exp = normalizedExpression.split(" ");
-  let stack = [];
+  const exp = normalizedExpression.split(" ");
+  const stack = [];
 
   if (exp.length === 0 || exp.length === 1 || exp.length === 2) {
     return "error";
