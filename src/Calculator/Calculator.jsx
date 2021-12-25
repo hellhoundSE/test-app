@@ -42,7 +42,7 @@ const Calculator = () => {
             <button onClick={handleCalculate}>Calculate</button>
             <button onClick={handleClear} >Clear</button>
             {errors.map((error) => 
-                <p key={error}>{error}</p>
+                <p key={error} style={{color:"red"}}>{error}</p>
             )}
         </div>
     )
