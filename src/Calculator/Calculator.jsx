@@ -37,13 +37,13 @@ const Calculator = () => {
 
     return (
         <div>
-            {errors.map((error) => 
-                <p key={error}>{error}</p>
-            )}
             <input style={{minWidth:"400px"}} id="expInput" value={expression} onChange={expressionChangeListener}/> = <span>{result}</span>
             <br/>
             <button onClick={handleCalculate}>Calculate</button>
             <button onClick={handleClear} >Clear</button>
+            {errors.map((error) => 
+                <p key={error}>{error}</p>
+            )}
         </div>
     )
 }
